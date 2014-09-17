@@ -1,11 +1,21 @@
 h3 Home
 
+div(cm-movie, title='The Hobbit')
+div(cm-movie, title='The Matrix')
+div(cm-movie, title='Star Trek')
+
+div
+
 div(cm-weather, zip='37203')
 div(cm-weather, zip='10011')
 div(cm-weather, zip='99501')
 
+div
+
 div(ng-repeat='symbol in symbols', cm-stock, symbol='{{symbol}}')
 div(ng-repeat='person in people', cm-greeting, name='{{person.name}}', age='{{person.age}}')
+
+div
 
 div(cm-clock, frequency='2000')
 div(cm-clock, frequency='1000')
