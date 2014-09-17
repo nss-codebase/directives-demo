@@ -10,7 +10,7 @@
     o.scope       = {frequency:'@'};
     o.link        = function(scope, element, attrs){
                       function updateTime(){
-                        scope.date = new Date();
+                        scope.date = (new Date()).getTime();
                       }
 
                       var id = $interval(updateTime, scope.frequency * 1);
