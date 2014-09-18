@@ -1,8 +1,11 @@
 h3 Home
 
-div(cm-movie, title='The Hobbit')
-div(cm-movie, title='The Matrix')
-div(cm-movie, title='Star Trek')
+input(type='text', ng-model='title')
+button(ng-click='addMovie()') Add Movie
+
+div
+
+div(cm-movie, ng-repeat='title in titles', title='{{title}}', remove='delMovie($index)')
 
 div
 
